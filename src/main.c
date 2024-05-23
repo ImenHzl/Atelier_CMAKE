@@ -15,6 +15,7 @@ int main(int argc, char *argv[]){
 		else {
 			printf("Erreur de parametres\n"); 
 		}
+	}
 	else if (argc == 4)
 	{
 	char* op = argv[1];
