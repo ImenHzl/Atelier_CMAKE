@@ -84,3 +84,14 @@ jobs:
           cmake ..
           make
           ./src/calculator carre 10 5
+  Deploy:
+    runs-on: ubuntu-latest
+    needs: 
+      - Test_Add
+      - Test_Div
+      - Test_Mul
+      - Test_Sub
+      - Test_carre
+    steps:
+      - name: Déploiement de la solution
+        run: echo "Déploiement de la solution"
